@@ -8,5 +8,5 @@ made by Tim Glorioso with the help of:
 - [p5.js](http://p5js.org)
 
 ## license
-code, markup, etc. under ISC (see LICENSE)
+code, markup, etc. under ISC (see LICENSE)  
 content under [CC-BY-SA](http://creativecommons.org/licenses/by-sa/4.0/)
