@@ -1,7 +1,7 @@
 # tglo.net
 
 ## credits
-made by Tim Glorioso with the help of:
+made with the invaluable help of:
 - [cdnjs](https://cdnjs.com)
 - [Inkscape](https://inkscape.org/en/)
 - [normalize.css](http://necolas.github.io/normalize.css/)
