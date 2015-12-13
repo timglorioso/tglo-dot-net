@@ -26,23 +26,23 @@ function setup() {
 }
 
 count = 0;
-x = 0;
-y = 0;
 
-function reset() {
-    count = 0;
-    x = 0;
-    y = 0;
+function nextGlyph() {
+    return glyphs[count++]; // for now, increment
+}
+
+function drawGlyph(x, y) {
+    if (count < glyphs.length) {
+        image(nextGlyph(), 0, 0, 1000, 1000, x, y, 180, 180);
+    } else {
+        count = 0;
+    }
 }
 
 function draw() {
     clear();
-    if (count < glyphs.length) {
-        image(glyphs[count], 0, 0, 1000, 1000, x, y, 180, 180);
-        count++;
-    } else {
-        reset();
-    }
+    drawGlyph(0, 0);
+    drawGlyph(0, 180);
 }
 
 on = false;
