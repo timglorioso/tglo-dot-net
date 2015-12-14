@@ -22,15 +22,19 @@ function preload() {
 
 scale = 0;
 
-function setup() {
-    createCanvas(windowWidth, windowHeight);
-    frameRate(4);
-    pixelDensity(2);
+function determineScale() {
     if (windowWidth < 1500) {
         scale = 180;
     } else {
         scale = 250;
     }
+}
+
+function setup() {
+    createCanvas(windowWidth, windowHeight);
+    frameRate(4);
+    pixelDensity(2);
+    determineScale();
 }
 
 count = 0;
