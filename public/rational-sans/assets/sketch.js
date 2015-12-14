@@ -23,6 +23,7 @@ function preload() {
 function setup() {
     createCanvas(windowWidth, windowHeight);
     frameRate(4);
+    pixelDensity(2);
 }
 
 count = 0;
