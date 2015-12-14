@@ -28,6 +28,8 @@ function setup() {
     pixelDensity(2);
     if (windowWidth < 1500) {
         scale = 180;
+    } else {
+        scale = 250;
     }
 }
 
@@ -52,7 +54,7 @@ function draw() {
     if (on) {
         clear();
         drawGlyph(0, 0);
-        drawGlyph(0, 180);
+        drawGlyph(0, scale);
     }
 }
 
