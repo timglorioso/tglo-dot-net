@@ -40,19 +40,16 @@ function drawGlyph(x, y) {
     }
 }
 
-function draw() {
-    clear();
-    drawGlyph(0, 0);
-    drawGlyph(0, 180);
-}
-
 on = false;
+
+function draw() {
+    if (on) {
+        clear();
+        drawGlyph(0, 0);
+        drawGlyph(0, 180);
+    }
+}
 
 function mouseClicked() {
     on = !on;
-    if (on) {
-        noLoop();
-    } else {
-        loop();
-    }
 }
