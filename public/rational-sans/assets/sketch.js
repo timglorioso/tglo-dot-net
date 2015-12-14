@@ -36,16 +36,14 @@ function setup() {
 count = 0;
 
 function nextGlyph() {
+    if (count >= glyphs.length) {
+        count = 0;
+    }
     return glyphs[count++]; // for now, increment
 }
 
-function drawGlyph(x, y) {
-    if (count < glyphs.length) {
-        img = nextGlyph();
-        image(img, 0, 0, img.width, img.height, x, y, scale, scale);
-    } else {
-        count = 0;
-    }
+function drawGlyph(glyph, x, y) {
+    image(glyph, 0, 0, glyph.width, glyph.height, x, y, scale, scale);
 }
 
 on = false;
@@ -53,8 +51,8 @@ on = false;
 function draw() {
     if (on) {
         clear();
-        drawGlyph(0, 0);
-        drawGlyph(0, scale);
+        drawGlyph(nextGlyph(), 0, 0);
+        drawGlyph(nextGlyph(), 0, scale);
     }
 }
 
