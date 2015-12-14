@@ -20,10 +20,15 @@ function preload() {
     ];
 }
 
+scale = 0;
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
     frameRate(4);
     pixelDensity(2);
+    if (windowWidth < 1500) {
+        scale = 180;
+    }
 }
 
 count = 0;
@@ -34,7 +39,8 @@ function nextGlyph() {
 
 function drawGlyph(x, y) {
     if (count < glyphs.length) {
-        image(nextGlyph(), 0, 0, 1000, 1000, x, y, 180, 180);
+        img = nextGlyph();
+        image(img, 0, 0, img.width, img.height, x, y, scale, scale);
     } else {
         count = 0;
     }
