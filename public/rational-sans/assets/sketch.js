@@ -1,3 +1,11 @@
+// global variables
+var glyphs;
+var scale;
+
+// temporary globals (for development)
+var count;
+var on;
+
 function preload() {
     glyphs = [
         loadImage('assets/svg/a.svg'),
@@ -20,8 +28,6 @@ function preload() {
     ];
 }
 
-scale = 0;
-
 function determineScale() {
     if (windowWidth < 1500) {
         scale = 180;
@@ -35,9 +41,9 @@ function setup() {
     frameRate(4);
     pixelDensity(2);
     determineScale();
+    count = 0;
+    on = true;
 }
-
-count = 0;
 
 function nextGlyph() {
     if (count >= glyphs.length) {
@@ -55,8 +61,6 @@ function draw() {
     drawGlyph(nextGlyph(), 0, 0);
     drawGlyph(nextGlyph(), 0, scale);
 }
-
-on = true;
 
 function mouseClicked() {
     if (on) {
