@@ -50,16 +50,19 @@ function drawGlyph(glyph, x, y) {
     image(glyph, 0, 0, glyph.width, glyph.height, x, y, scale, scale);
 }
 
-on = false;
-
 function draw() {
-    if (on) {
-        clear();
-        drawGlyph(nextGlyph(), 0, 0);
-        drawGlyph(nextGlyph(), 0, scale);
-    }
+    clear();
+    drawGlyph(nextGlyph(), 0, 0);
+    drawGlyph(nextGlyph(), 0, scale);
 }
 
+on = true;
+
 function mouseClicked() {
+    if (on) {
+        noLoop();
+    } else {
+        loop();
+    }
     on = !on;
 }
