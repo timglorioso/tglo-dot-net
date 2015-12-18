@@ -91,10 +91,7 @@ function setup() {
  * Return a glyph from the glyphs list to use in the next drawing.
  */
 function nextGlyph() {
-    if (count >= glyphs.length) {
-        count = 0;
-    }
-    return glyphs[count++]; // for now, increment through the list
+    return glyphs[floor(random(glyphs.length))];
 }
 
 /*
