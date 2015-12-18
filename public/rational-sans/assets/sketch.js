@@ -13,6 +13,7 @@
 
 // global variables
 var glyphs;
+var rationalQ;
 var equalsSign;
 var fractionBar;
 var scale;
@@ -42,9 +43,11 @@ function preload() {
         loadImage('assets/svg/r.svg'),
         loadImage('assets/svg/s.svg'),
         loadImage('assets/svg/t.svg'),
-        loadImage('assets/svg/u.svg')
+        loadImage('assets/svg/u.svg'),
+        loadImage('assets/svg/O_.svg')
     ];
 
+    rationalQ = loadImage('assets/svg/Q_.svg');
     equalsSign = loadImage('assets/svg/equals-sign.svg');
     fractionBar = loadImage('assets/svg/fraction-bar.svg');
 }
@@ -67,18 +70,18 @@ function setup() {
 
     /* Setup canvas, set animation and display properties */
     createCanvas(windowWidth, windowHeight);
-    frameRate(1);
+    frameRate(2);
     pixelDensity(2);
     determineScale();
 
     /* Place the equals sign in the center of the window */
-    var centerX = (windowWidth / 2) - (equalsSign.width / 16);
-    var centerY = (windowHeight / 2) - (equalsSign.height / 8);
+    var centerX = (windowWidth / 2) - (scale / 2);
+    var centerY = (windowHeight / 2) - (scale / 1.4);
     drawGlyph(equalsSign, centerX, centerY);
 
-    /* Place the fraction bar next to the equals sign */
-    drawGlyph(fractionBar, centerX + fractionBar.width / 6.7,
-              centerY + fractionBar.width / 55);
+    /* Place the Q and fraction bar relative to the equals sign */
+    drawGlyph(rationalQ, centerX - scale / 1.2, centerY + scale / 12);
+    drawGlyph(fractionBar, centerX + scale, centerY + scale / 10);
 
     count = 0;
     on = true;
@@ -117,12 +120,12 @@ function draw() {
     // out with the old glyphs (sorta)
     fill(255);
     noStroke();
-    rect(locX, locY - 50, glyph1.width, glyph1.height / 4.5);
-    rect(locX, locY + scale + 60, glyph2.width, glyph2.height);
+    rect(locX, locY - 30, scale, scale);
+    rect(locX, locY + scale + 50, scale, scale);
 
     // in with the new glyphs
-    drawGlyph(glyph1, locX, locY - 50);
-    drawGlyph(glyph2, locX, locY + scale + 60);
+    drawGlyph(glyph1, locX, locY - 30);
+    drawGlyph(glyph2, locX, locY + scale + 50);
 }
 
 function mouseClicked() {
