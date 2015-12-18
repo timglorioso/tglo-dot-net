@@ -33,11 +33,13 @@ function preload() {
         loadImage('assets/svg/d.svg'),
         loadImage('assets/svg/e.svg'),
         loadImage('assets/svg/f.svg'),
+        loadImage('assets/svg/g.svg'),
         loadImage('assets/svg/h.svg'),
         loadImage('assets/svg/i.svg'),
         loadImage('assets/svg/j.svg'),
         loadImage('assets/svg/k.svg'),
         loadImage('assets/svg/l.svg'),
+        loadImage('assets/svg/m.svg'),
         loadImage('assets/svg/n.svg'),
         loadImage('assets/svg/o.svg'),
         loadImage('assets/svg/p.svg'),
@@ -51,7 +53,6 @@ function preload() {
         loadImage('assets/svg/x.svg'),
         loadImage('assets/svg/y.svg'),
         loadImage('assets/svg/z.svg')
-        // loadImage('assets/svg/O_.svg')
     ];
 
     rationalQ = loadImage('assets/svg/Q_.svg');
