@@ -35,6 +35,8 @@ function preload() {
         loadImage('assets/svg/f.svg'),
         loadImage('assets/svg/h.svg'),
         loadImage('assets/svg/i.svg'),
+        loadImage('assets/svg/j.svg'),
+        loadImage('assets/svg/k.svg'),
         loadImage('assets/svg/l.svg'),
         loadImage('assets/svg/n.svg'),
         loadImage('assets/svg/o.svg'),
@@ -44,6 +46,7 @@ function preload() {
         loadImage('assets/svg/s.svg'),
         loadImage('assets/svg/t.svg'),
         loadImage('assets/svg/u.svg'),
+        loadImage('assets/svg/x.svg'),
         loadImage('assets/svg/O_.svg')
     ];
 
