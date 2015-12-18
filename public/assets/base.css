@@ -1,3 +1,8 @@
 body {
     font: normal 400 20px/1.5 'Neutral', sans-serif;
 }
+
+p#notice {
+    padding: 0 0 0 1.4em;
+    color: #888;
+}
