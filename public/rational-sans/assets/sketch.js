@@ -46,8 +46,10 @@ function preload() {
         loadImage('assets/svg/s.svg'),
         loadImage('assets/svg/t.svg'),
         loadImage('assets/svg/u.svg'),
-        loadImage('assets/svg/x.svg'),
-        loadImage('assets/svg/O_.svg')
+        loadImage('assets/svg/v.svg'),
+        loadImage('assets/svg/w.svg'),
+        loadImage('assets/svg/x.svg')
+        // loadImage('assets/svg/O_.svg')
     ];
 
     rationalQ = loadImage('assets/svg/Q_.svg');
