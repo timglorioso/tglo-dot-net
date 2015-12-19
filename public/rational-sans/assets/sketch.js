@@ -85,11 +85,11 @@ function setup() {
     /* Place the equals sign in the center of the window */
     var centerX = (windowWidth / 2) - (scale / 2);
     var centerY = (windowHeight / 2) - (scale / 1.4);
-    drawGlyph(equalsSign, centerX, centerY);
+    drawGlyph(equalsSign, centerX, centerY, scale);
 
     /* Place the Q and fraction bar relative to the equals sign */
-    drawGlyph(rationalQ, centerX - scale / 1.2, centerY + scale / 12);
-    drawGlyph(fractionBar, centerX + scale, centerY + scale / 10);
+    drawGlyph(rationalQ, centerX - scale / 1.2, centerY + scale / 12, scale);
+    drawGlyph(fractionBar, centerX + scale, centerY + scale / 10, scale);
 
     count = 0;
     on = true;
@@ -105,8 +105,8 @@ function nextGlyph() {
 /*
  * Because I never want to decipher those method arguments again.
  */
-function drawGlyph(glyph, x, y) {
-    image(glyph, 0, 0, glyph.width, glyph.height, x, y, scale, scale);
+function drawGlyph(glyph, x, y, size) {
+    image(glyph, 0, 0, glyph.width, glyph.height, x, y, size, size);
 }
 
 /*
@@ -129,8 +129,8 @@ function draw() {
     rect(locX, locY + scale + 50, scale, scale);
 
     // in with the new glyphs
-    drawGlyph(glyph1, locX, locY - 30);
-    drawGlyph(glyph2, locX, locY + scale + 50);
+    drawGlyph(glyph1, locX, locY - 30, scale);
+    drawGlyph(glyph2, locX, locY + scale + 50, scale);
 }
 
 function mouseClicked() {
