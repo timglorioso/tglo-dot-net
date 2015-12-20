@@ -1,8 +1,88 @@
 body {
     font: normal 400 20px/1.5 'Neutral', sans-serif;
+    background-color: #317;
+    color: #fff;
+    cursor: default;
 }
 
-p#notice {
-    padding: 0 0 0 1.4em;
-    color: #888;
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a::after {
+    position: absolute;
+    padding-left: .2em;
+    content: '\2192';
+    opacity: 0;
+    transition: 70ms padding-left linear, 70ms opacity linear;
+}
+
+a:hover::after {
+    padding-left: .5em;
+    opacity: 1;
+}
+
+a:active {
+    opacity: .6;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: relative;
+    margin: 0;
+    padding: .5em 0;
+    font-size: 1em;
+    word-spacing: 4px;
+}
+
+h1 p {
+    position: absolute;
+    bottom: 2em;
+    left: 1.5em;
+    border-radius: .2em;
+    padding: .3em .5em .3em .6em;
+    opacity: 0;
+    background-color: #111;
+    font-weight: 400;
+    font-size: .8em;
+    content: 'hello!';
+    pointer-events: none;
+    transition: 70ms opacity linear;
+}
+
+h1 p::after {
+    position: absolute;
+    bottom: -8px;
+    left: 37%;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #111;
+    content: ' ';
+}
+
+h1:hover p {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+nav {
+    margin-left: 1em;
+    border-left: 2px solid #eee;
+    padding-left: 1em;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    padding: .1em 0;
 }
