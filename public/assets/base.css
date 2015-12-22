@@ -1,114 +1,126 @@
+/* tglo dot net */
+
+/*
+ * everywhere
+ */
+
 body {
-    font: normal 400 20px/1.5 'Neutral', sans-serif;
-    color: #fff;
-    background: #317;
-    cursor: default;
+   font: normal 400 20px/1.5 'Neutral', sans-serif;
+   cursor: default;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+   text-decoration: none;
 }
 
-a::after {
-    position: absolute;
-    padding-left: .2em;
-    content: '\2192';
-    opacity: 0;
-    transition: 70ms padding-left linear, 70ms opacity linear;
+/*
+ * root
+ */
+
+#root {
+   background-color: #317;
+   color: #fff;
 }
 
-a:hover::after {
-    padding-left: .5em;
-    opacity: 1;
+#root a {
+   color: #fff;
 }
 
-a:active {
-    opacity: .6;
+#root a::after {
+   position: absolute;
+   padding-left: .2em;
+   content: '\2192';
+   opacity: 0;
+   transition: 70ms padding-left linear, 70ms opacity linear;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#root a:hover::after {
+   padding-left: .5em;
+   opacity: 1;
 }
 
-h1 {
-    position: relative;
-    margin: 0;
-    padding: .5em 0;
-    font-size: 1em;
-    word-spacing: 4px;
+#root a:active {
+   opacity: .6;
 }
 
-h1 p {
-    position: absolute;
-    bottom: 2em;
-    left: 1.5em;
-    border-radius: .2em;
-    padding: .3em .5em .3em .6em;
-    opacity: 0;
-    background-color: #111;
-    font-weight: 400;
-    font-size: .8em;
-    content: 'hello!';
-    pointer-events: none;
-    transition: 70ms opacity linear;
+#root #portal {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-h1 p::after {
-    position: absolute;
-    bottom: -8px;
-    left: 37%;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid #111;
-    content: ' ';
+#root #portal #site-title {
+   position: relative;
+   margin: 0;
+   padding: .5em 0;
+   font-size: 1em;
+   word-spacing: 4px;
 }
 
-h1:hover p {
-    opacity: 1;
-    pointer-events: auto;
+#root #portal #site-title #greeting {
+   position: absolute;
+   bottom: 2em;
+   left: 1.5em;
+   border-radius: .2em;
+   padding: .3em .5em .3em .6em;
+   opacity: 0;
+   background-color: #111;
+   font-weight: 400;
+   font-size: .8em;
+   content: 'hello!';
+   pointer-events: none;
+   transition: 70ms opacity linear;
 }
 
-nav {
+#root #portal #site-title #greeting::after {
+   position: absolute;
+   bottom: -8px;
+   left: 37%;
+   border-left: 8px solid transparent;
+   border-right: 8px solid transparent;
+   border-top: 8px solid #111;
+   content: ' ';
 }
 
-ul {
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
+#root #portal #site-title:hover #greeting {
+   opacity: 1;
+   pointer-events: auto;
 }
 
-li {
-    padding: .2em 0;
+#root #portal #links {
+   margin: 0;
+   list-style: none;
+}
+
+#root #portal #links > * {
+   padding: .2em 0;
 }
 
 @media (max-width: 500px) {
 
-main {
-    flex-direction: column;
-}
+   #root #portal {
+      flex-direction: column;
+   }
 
-nav {
-    margin-top: 1em;
-    border-top: 2px solid #eee;
-    padding: 1.5em 2.5em 0 2.5em;
-    text-align: center;
-}
+   #root #portal #links {
+      margin-top: 1em;
+      border-top: 2px solid #eee;
+      padding: 1.5em 2.5em 0 2.5em;
+      text-align: center;
+   }
 
 }
 
 @media (min-width: 501px) {
 
-main {
-    flex-direction: row;
-}
+   #root #portal {
+      flex-direction: row;
+   }
 
-nav {
-    margin-left: 1.5em;
-    border-left: 2px solid #eee;
-    padding: .5em 0 .5em 1.5em;
-}
+   #root #portal #links {
+      margin-left: 1.5em;
+      border-left: 2px solid #eee;
+      padding: .5em 0 .5em 1.5em;
+   }
 
 }

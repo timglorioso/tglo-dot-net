@@ -10,21 +10,19 @@
 <link href='http://fonts.typotheque.com/WF-026258-008536.css' rel='stylesheet'>
 </head>
 
-<body>
+<body id='root'>
 
-<main>
-<h1>tglo &#x25cf; net <p>hello!</p></h1>
-<nav>
-<ul>
+<main id='portal'>
+<h1 id='site-title'>tglo &#x25cf; net <p id='greeting'>hello!</p></h1>
+<ul id='links'>
 <li><a href=''>stuff</a></li>
 <li><a href=''>blog</a></li>
 <li><a href='/about/'>about</a></li>
 </ul>
-</nav>
 </main>
 
 <script>
-document.querySelector('main').style.height = window.innerHeight + 'px';
+document.querySelector('#portal').style.height = window.innerHeight + 'px';
 </script>
 
 </body>
