@@ -6,11 +6,17 @@
 
 body {
    font: normal 400 20px/1.5 'Neutral', sans-serif;
+   color: #fff;
    cursor: default;
 }
 
 a {
+   color: #fff;
    text-decoration: none;
+}
+
+a:active {
+   opacity: .6;
 }
 
 /*
@@ -50,11 +56,6 @@ a {
 
 #root {
    background-color: #317;
-   color: #fff;
-}
-
-#root a {
-   color: #fff;
 }
 
 #root a::after {
@@ -68,10 +69,6 @@ a {
 #root a:hover::after {
    padding-left: .5em;
    opacity: 1;
-}
-
-#root a:active {
-   opacity: .6;
 }
 
 #root #portal {
@@ -128,16 +125,19 @@ a {
 }
 
 /*
+ * stuff
+ */
+
+#stuff {
+   background-color: #14a;
+}
+
+/*
  * about
  */
 
 #about {
-   background-color: #111;
-   color: #fff;
-}
-
-#about a {
-   color: #fff;
+   background-color: #222;
 }
 
 /*
@@ -150,7 +150,7 @@ a {
 }
 
 #rational-sans a {
-   color: #01f;
+   color: #888;
 }
 
 /*
