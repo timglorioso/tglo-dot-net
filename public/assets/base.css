@@ -1,7 +1,7 @@
 body {
     font: normal 400 20px/1.5 'Neutral', sans-serif;
     color: #fff;
-    background: radial-gradient(circle, rgb(51, 17, 119), rgb(34, 17, 102));
+    background: radial-gradient(circle, #317, #216 70%);
     cursor: default;
 }
 
