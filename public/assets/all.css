@@ -29,6 +29,7 @@ a:active {
    left: 0;
    padding: .3em 0 0 .8em;
    transition: 70ms top linear, 70ms left linear;
+   font-size: 1.5em;
 }
 
 #dot::before {
@@ -75,6 +76,7 @@ a:active {
    display: flex;
    justify-content: center;
    align-items: center;
+   font-size: 1.5em;
 }
 
 #root #portal #site-title {
@@ -82,7 +84,7 @@ a:active {
    margin: 0;
    padding: .5em 0;
    font-size: 1em;
-   word-spacing: 4px;
+   word-spacing: 3px;
 }
 
 #root #portal #site-title #greeting {
