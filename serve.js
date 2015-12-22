@@ -2,7 +2,9 @@
 
 var httpd = require('node-http-server');
 
-httpd.deploy({
-    port: 8888,
-    root: './public/'
-});
+var config = httpd.configTemplate();
+config.contentType.svg = 'image/svg+xml';
+config.port = 8888;
+config.root = './public/';
+
+httpd.deploy(config);
