@@ -19,7 +19,6 @@ var fractionBar;
 var scale;
 
 // likely to change or be removed
-var count;
 var on;
 
 /*
@@ -91,7 +90,6 @@ function setup() {
     drawGlyph(rationalQ, centerX - scale / 1.2, centerY + scale / 12, scale);
     drawGlyph(fractionBar, centerX + scale, centerY + scale / 10, scale);
 
-    count = 0;
     on = true;
 }
 
