@@ -14,7 +14,7 @@ a {
 }
 
 /*
- *
+ * feature: home button
  */
 
 #dot {
@@ -132,7 +132,7 @@ a {
  */
 
 #about {
-   background-color: #317;
+   background-color: #111;
    color: #fff;
 }
 
@@ -140,17 +140,17 @@ a {
    color: #fff;
 }
 
-.bgfade {
-   animation: .14s linear 1 bgfade;
+/*
+ * rational-sans
+ */
+
+#rational-sans {
+   background-color: #fff;
+   color: #333;
 }
 
-@keyframes bgfade {
-   from {
-      background-color: #317;
-   }
-   to {
-      background-color: #111;
-   }
+#rational-sans a {
+   color: #02f;
 }
 
 /*
