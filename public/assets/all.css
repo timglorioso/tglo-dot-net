@@ -1,7 +1,7 @@
 /* tglo dot net */
 
 /*
- * everywhere
+ * universe
  */
 
 body {
@@ -11,6 +11,37 @@ body {
 
 a {
    text-decoration: none;
+}
+
+/*
+ *
+ */
+
+#dot {
+   position: fixed;
+   top: 0;
+   left: 0;
+   padding: .3em 0 0 .9em;
+   transition: 70ms top linear, 70ms left linear;
+}
+
+#dot::before {
+   position: fixed;
+   top: 0;
+   left: 0;
+   padding: .2em .4em .4em;
+   content: '\2196';
+   opacity: 0;
+   transition: 70ms opacity linear;
+}
+
+#dot:hover {
+   top: .7em;
+   left: .7em;
+}
+
+#dot:hover::before {
+   opacity: 1;
 }
 
 /*
@@ -95,6 +126,36 @@ a {
 #root #portal #links > * {
    padding: .2em 0;
 }
+
+/*
+ * about
+ */
+
+#about {
+   background-color: #317;
+   color: #fff;
+}
+
+#about a {
+   color: #fff;
+}
+
+.bgfade {
+   animation: .14s linear 1 bgfade;
+}
+
+@keyframes bgfade {
+   from {
+      background-color: #317;
+   }
+   to {
+      background-color: #111;
+   }
+}
+
+/*
+ * viewports
+ */
 
 @media (max-width: 500px) {
 
