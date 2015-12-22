@@ -21,7 +21,7 @@ a {
    position: fixed;
    top: 0;
    left: 0;
-   padding: .3em 0 0 .9em;
+   padding: .3em 0 0 .8em;
    transition: 70ms top linear, 70ms left linear;
 }
 
@@ -36,7 +36,7 @@ a {
 }
 
 #dot:hover {
-   top: .75em;
+   top: .7em;
    left: .7em;
 }
 
@@ -150,7 +150,7 @@ a {
 }
 
 #rational-sans a {
-   color: #02f;
+   color: #01f;
 }
 
 /*
