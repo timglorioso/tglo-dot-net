@@ -1,189 +1,86 @@
 /* tglo dot net */
 
-/*
- * universe
- */
-
 body {
    font: normal 400 20px/1.5 'Neutral', sans-serif;
-   color: #fff;
+   color: #222;
    cursor: default;
 }
 
 a {
-   color: #fff;
+   font-weight: 700;
+   color: #111;
+   opacity: .8;
    text-decoration: none;
+   transition: .1s opacity linear;
 }
 
-a:active {
-   opacity: .6;
+a:hover {
+   opacity: .95;
 }
 
-/*
- * feature: home button
- */
-
-#dot {
-   position: fixed;
-   top: 0;
-   left: 0;
-   padding: .3em 0 0 .8em;
-   transition: 70ms top linear, 70ms left linear;
-   font-size: 1.5em;
-}
-
-#dot::before {
-   position: fixed;
-   top: 0;
-   left: 0;
-   padding: .2em .4em .4em;
-   content: '\2196';
-   opacity: 0;
-   transition: 100ms opacity linear;
-}
-
-#dot:hover {
-   top: .7em;
-   left: .7em;
-}
-
-#dot:hover::before {
-   opacity: 1;
-}
-
-/*
- * root
- */
-
-#root {
-   background-color: #317;
-}
-
-#root a::after {
-   position: absolute;
-   padding-left: .2em;
-   content: '\2192';
-   opacity: 0;
-   transition: 70ms padding-left linear, 70ms opacity linear;
-}
-
-#root a:hover::after {
-   padding-left: .5em;
-   opacity: 1;
-}
-
-#root #portal {
+#root main {
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 1.5em;
+   font-size: 1.6em;
 }
 
-#root #portal #site-title {
-   position: relative;
+#root main #site-title {
    margin: 0;
-   padding: .5em 0;
    font-size: 1em;
-   word-spacing: 3px;
+   word-spacing: 1px;
 }
 
-#root #portal #site-title #greeting {
-   position: absolute;
-   bottom: 2em;
-   left: 1.5em;
-   border-radius: .2em;
-   padding: .3em .5em .3em .6em;
-   opacity: 0;
-   background-color: #111;
-   font-weight: 400;
-   font-size: .8em;
-   content: 'hello!';
-   pointer-events: none;
-   transition: 70ms opacity linear;
+#root main #site-title span {
+   color: #444;
+   transition: .1s color linear;
 }
 
-#root #portal #site-title #greeting::after {
-   position: absolute;
-   bottom: -8px;
-   left: 37%;
-   border-left: 8px solid transparent;
-   border-right: 8px solid transparent;
-   border-top: 8px solid #111;
-   content: ' ';
+#root main #site-title:hover span {
+   color: rgba(0, 51, 204, .95);
 }
 
-#root #portal #site-title:hover #greeting {
-   opacity: 1;
-   pointer-events: auto;
-}
-
-#root #portal #links {
-   margin: 0;
+#root main #links {
    list-style: none;
+   border-color: rgba(102, 102, 102, .8);
+   transition: .1s border-color linear;
 }
 
-#root #portal #links > * {
-   padding: .2em 0;
+#root main #links:hover {
+   border-color: rgba(0, 51, 204, .8);
 }
 
-/*
- * stuff
- */
-
-#stuff {
-   background-color: #14a;
+#root main #links > * {
+   margin: .1em 0;
 }
-
-/*
- * about
- */
-
-#about {
-   background-color: #222;
-}
-
-/*
- * rational-sans
- */
-
-#rational-sans {
-   background-color: #fff;
-   color: #333;
-}
-
-#rational-sans a {
-   color: #888;
-}
-
-/*
- * viewports
- */
 
 @media (max-width: 500px) {
 
-   #root #portal {
+   #root main {
       flex-direction: column;
    }
 
-   #root #portal #links {
-      margin-top: 1em;
-      border-top: 4px solid #eee;
-      padding: 1.5em 2.5em 0 2.5em;
+   #root main #links {
+      margin: 1em 0 0 0;
+      border-top: 5px solid;
+      padding: .8em 2.4em 0 2.4em;
       text-align: center;
    }
-
 }
 
 @media (min-width: 501px) {
 
-   #root #portal {
+   #root main {
       flex-direction: row;
    }
 
-   #root #portal #links {
-      margin-left: 1.5em;
-      border-left: 4px solid #eee;
-      padding: .5em 0 .5em 1.5em;
+   #root main #links {
+      margin: 0 0 0 1em;
+      border-left: 5px solid;
+      padding: .4em 0 .4em 1em;
    }
+}
 
+#root main #links {
+   border-color: rgba(102, 102, 102, .8);
 }
