@@ -9,13 +9,17 @@ body {
 a {
    font-weight: 700;
    color: #111;
-   opacity: .8;
+   opacity: .75;
    text-decoration: none;
-   transition: .1s opacity linear;
+   transition: 60ms opacity linear;
 }
 
 a:hover {
-   opacity: .95;
+   opacity: 1;
+}
+
+#root a {
+   display: inline-block;
 }
 
 #root main {
@@ -32,22 +36,21 @@ a:hover {
 }
 
 #root main #site-title span {
-   color: #444;
-   transition: .1s color linear;
+   color: #555;
+   transition: 60ms color linear;
 }
 
-#root main #site-title:hover span {
-   color: rgba(0, 51, 204, .95);
+#root main #site-title a:hover span {
+   color: rgba(0, 68, 204, 1);
 }
 
 #root main #links {
    list-style: none;
-   border-color: rgba(102, 102, 102, .8);
-   transition: .1s border-color linear;
+   transition: 60ms border-color linear;
 }
 
 #root main #links:hover {
-   border-color: rgba(0, 51, 204, .8);
+   border-color: rgba(0, 68, 204, .9);
 }
 
 #root main #links > * {
@@ -82,5 +85,5 @@ a:hover {
 }
 
 #root main #links {
-   border-color: rgba(102, 102, 102, .8);
+   border-color: rgba(136, 136, 136, .8);
 }
