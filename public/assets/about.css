@@ -1,0 +1,19 @@
+#about :first-child {
+   margin-top: .6em;
+   display: inline-block;
+   border-right-width: 4px;
+   border-right-style: solid;
+   padding: .05em .5em .2em .7em;
+   font-size: 1.4em;
+}
+
+#about :first-child:hover {
+   border-right-color: #333;
+   color: #333;
+}
+
+#about h1 {
+   display: inline-block;
+   margin-left: .6em;
+   font-size: 1.3em;
+}
