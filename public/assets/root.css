@@ -17,13 +17,9 @@
    word-spacing: 2px;
 }
 
-#root main #site-title span {
-   color: #35f;
-}
-
 #root main #links {
    list-style: none;
-   border: 0 solid #36f;
+   border: 0 solid;
 }
 
 #root main #links > * {

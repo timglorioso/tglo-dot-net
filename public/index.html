@@ -14,15 +14,17 @@ body {
    color: #333;
    cursor: default;
 }
-
 a {
    font-weight: 700;
    color: #333;
    text-decoration: none;
 }
-
 a:hover {
    color: #000;
+}
+.dot, .slash {
+   border-color: #36f;
+   color: #36f;
 }
 </style>
 </head>
@@ -30,8 +32,8 @@ a:hover {
 <body id='root'>
 
 <main>
-<h1 id='site-title'>tglo <span>&#x25cf;</span> net</h1>
-<ul id='links'>
+<h1 id='site-title'>tglo <span class='dot'>&#x25cf;</span> net</h1>
+<ul id='links' class='slash'>
 <li><a href=''>stuff</a></li>
 <li><a href=''>blog</a></li>
 <li><a href='/about/'>about</a></li>
