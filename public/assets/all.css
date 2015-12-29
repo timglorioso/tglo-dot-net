@@ -2,20 +2,18 @@
 
 body {
    font: normal 400 20px/1.5 'Neutral', sans-serif;
-   color: #222;
+   color: #333;
    cursor: default;
 }
 
 a {
    font-weight: 700;
-   color: #111;
-   opacity: .75;
+   color: #333;
    text-decoration: none;
-   transition: 60ms opacity linear;
 }
 
 a:hover {
-   opacity: 1;
+   color: #000;
 }
 
 #root a {
@@ -32,25 +30,16 @@ a:hover {
 #root main #site-title {
    margin: 0;
    font-size: 1em;
-   word-spacing: 1px;
+   word-spacing: 2px;
 }
 
 #root main #site-title span {
-   color: #555;
-   transition: 60ms color linear;
-}
-
-#root main #site-title a:hover span {
-   color: rgba(0, 68, 204, 1);
+   color: #35f;
 }
 
 #root main #links {
    list-style: none;
-   transition: 60ms border-color linear;
-}
-
-#root main #links:hover {
-   border-color: rgba(0, 68, 204, .9);
+   border: 0 solid #36f;
 }
 
 #root main #links > * {
@@ -65,7 +54,7 @@ a:hover {
 
    #root main #links {
       margin: 1em 0 0 0;
-      border-top: 5px solid;
+      border-top-width: 6px;
       padding: .8em 2.4em 0 2.4em;
       text-align: center;
    }
@@ -79,11 +68,7 @@ a:hover {
 
    #root main #links {
       margin: 0 0 0 1em;
-      border-left: 5px solid;
+      border-left-width: 6px;
       padding: .4em 0 .4em 1em;
    }
-}
-
-#root main #links {
-   border-color: rgba(136, 136, 136, .8);
 }
