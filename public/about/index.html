@@ -36,7 +36,14 @@ a:hover {
 </header>
 
 <main>
+<h2>Hello.</h2>
+<p>I'm Tim Glorioso. Here's some filler text so I can see how the margins look. Honestly, you have too many pixels in your screen.</p>
 </main>
+
+<script>
+var headerHeight = document.querySelector('header').clientHeight;
+document.querySelector('main').style.height = window.innerHeight - (headerHeight * 2) + 'px';
+</script>
 
 </body>
 

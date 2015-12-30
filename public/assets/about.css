@@ -15,5 +15,59 @@
 #about h1 {
    display: inline-block;
    margin-left: .6em;
-   font-size: 1.3em;
+   margin-bottom: .1em;
+   font-size: 1.2em;
+}
+
+#about main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#about main p {
+   align-self: flex-start;
+}
+
+@media (max-width: 500px) {
+
+   #about main {
+      margin: 0 7%;
+   }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+
+   #about main {
+      margin: 0 11%;
+   }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+
+   #about main {
+      margin: 0 15%;
+   }
+}
+
+@media (min-width: 1101px) and (max-width: 1400px) {
+
+   #about main {
+      margin: 0 22%;
+   }
+}
+
+@media (min-width: 1401px) and (max-width: 2000px) {
+
+   #about main {
+      margin: 0 30%;
+   }
+}
+
+@media (min-width: 2001px) {
+
+   #about main {
+      margin: 0 40%;
+   }
 }
