@@ -13,15 +13,16 @@
       color: #fff;
       font: normal 400 20px/1.5 'Neutral', sans-serif;
       -webkit-font-smoothing: antialiased; /* light on dark */
+      -moz-osx-font-smoothing: grayscale; /* light on dark */
       cursor: default;
       opacity: 0;
-      transition: .7s opacity ease-out; }
+      transition: .6s opacity ease-out; }
     a {
       display: inline-block;
       color: #fff;
       opacity: .6;
       font-weight: 700;
-      /*text-decoration: none;*/
+      /*text-decoration: none;*/ /* accessibility */
       transition: 80ms opacity linear; }
     a:hover {
       opacity: 1; }
@@ -53,6 +54,9 @@
     .nobreak {
       white-space: nowrap;
     }
+    .away::after {
+      content: '\2197';
+    }
     @media (max-width: 600px) {
       main { width: 90%; }
     }
@@ -68,7 +72,7 @@
   <main>
     <img src='/assets/glasses.svg' width='120'>
     <h1>Welcome!</h1>
-    <p>I'm Tim Glorioso. You've found the place on the internet where I keep my <a href=''>stuff</a> and my <span class='nobreak'><a href=''>blog</a>.</span> Feel free to <a href='mailto:glorioso.tim@gmail.com'>contact</a> me or check out my <span class='nobreak'><a href='/timglorioso.pdf' rel='prefetch'>resume</a>.</span></p>
+    <p>I'm Tim Glorioso. You've found the place on the internet where I keep my <a href=''>stuff</a> and my <span class='nobreak'><a href='http://blog.tglo.net'>blog</a>.</span> Feel free to <a href='mailto:glorioso.tim@gmail.com' class='away'>contact</a> me or check out my <span class='nobreak'><a href='/timglorioso.pdf' rel='prefetch'>resume</a>.</span></p>
   </main>
   <script>
   function fadein() { document.body.style.opacity = '1'; }
