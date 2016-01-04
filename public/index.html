@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>tglo dot net</title>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href='/assets/normalize.css' rel='stylesheet'>
+  <link href='http://fonts.typotheque.com/WF-026258-008536.css'
+        rel='stylesheet'>
+  <style type='text/css'>
+    body {
+      background-color: #328;
+      color: #fff;
+      font: normal 400 20px/1.5 'Neutral', sans-serif;
+      -webkit-font-smoothing: antialiased; /* light on dark */
+      cursor: default;
+      opacity: 0;
+      transition: .7s opacity ease-out; }
+    a {
+      display: inline-block;
+      color: #fff;
+      opacity: .6;
+      font-weight: 700;
+      /*text-decoration: none;*/
+      transition: 80ms opacity linear; }
+    a:hover {
+      opacity: 1; }
+    header {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1em 2em;
+      text-align: right; }
+    h1 {
+      display: inline-block;
+      margin-bottom: 1em;
+      font-size: 1.2em; }
+    ul {
+      padding: 0;
+      list-style: none; }
+    li {
+      padding: .1em 0; }
+    .selected {
+      opacity: 1;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .nobreak {
+      white-space: nowrap;
+    }
+    @media (max-width: 600px) {
+      main { width: 90%; }
+    }
+    @media (min-width: 601px) and (max-width: 900px) {
+      main { width: 70%; }
+    }
+    @media (min-width: 901px) {
+      main { width: 30em; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img src='/assets/glasses.svg' width='120'>
+    <h1>Welcome!</h1>
+    <p>I'm Tim Glorioso. You've found the place on the internet where I keep my <a href=''>stuff</a> and my <span class='nobreak'><a href=''>blog</a>.</span> Feel free to <a href='mailto:glorioso.tim@gmail.com'>contact</a> me or check out my <span class='nobreak'><a href='/timglorioso.pdf' rel='prefetch'>resume</a>.</span></p>
+  </main>
+  <script>
+  function fadein() { document.body.style.opacity = '1'; }
+  document.querySelector('main').style.height = window.innerHeight + 'px';
+  window.onload = window.setTimeout(fadein, 100);
+  </script>
+</body>
+</html>
