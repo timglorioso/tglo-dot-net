@@ -1,0 +1,75 @@
+CTYPE html>
+<html lang='en'>
+    <head>
+        <title>blog @ tglo dot net</title>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet'
+              href='http://static.tumblr.com/ptwixgs/LAPo0eyg1/normalize.css'>
+        <link rel='stylesheet'
+              href='http://fonts.typotheque.com/WF-026258-008536.css'>
+        <style type='text/css'>
+            body {
+                font: normal 400 20px/1.5 'Neutral', sans-serif;
+                background-color: #fff;
+                color: #222;
+                opacity: 0;
+                cursor: default;
+                transition: .3s opacity ease-out;
+            }
+            a {
+                color: #222;
+                opacity: .6;
+                font-weight: 700;
+                text-decoration: none;
+                transition: 80ms opacity linear;
+            }
+            a:hover,
+            a.selected {
+                opacity: 1;
+            }
+            header {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 1em 2em;
+                text-align: right; }
+            h1 {
+                font-size: 1em;
+            }
+            header > a {
+                position: relative;
+                right: -.35em;
+            }
+            ul {
+                margin-top: .4em;
+                padding: 0;
+                list-style: none;
+            }
+            li {
+                padding: .1em;
+            }
+            body > iframe {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!--<h1><a href='http://www.tglo.net'>tglo dot net</a></h1>-->
+            <a href='http://www.tglo.net' title='back to tglo dot net'><img src='http://static.tumblr.com/ptwixgs/0sho0g0kv/glasses.svg' width='64'></a>
+            <ul>
+                <li><a href='http://www.tglo.net/stuff/'>stuff</a></li>
+                <li><a href='' class='selected'>blog</a></li>
+            </ul>
+        </header>
+        <main><!-- blog posts galore --></main>
+        <script>
+            function fadein() { document.body.style.opacity = '1'; }
+            var mainStyle = document.querySelector('main').style;
+            mainStyle.height = window.innerHeight + 'px';
+            window.setTimeout(fadein, 100);
+        </script>
+    </body>
+</html>
+
