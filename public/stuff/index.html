@@ -8,6 +8,7 @@
   <link rel='stylesheet'
         href='http://fonts.typotheque.com/WF-026258-008536.css'>
   <style type='text/css'>
+    html, body, main { height: 100%; }
     body {
       font: normal 400 20px/1.5 'Neutral', sans-serif;
       -webkit-font-smoothing: antialiased; /* light on dark */
@@ -67,8 +68,6 @@
   </main>
   <script>
     function fadein() { document.body.style.opacity = '1'; }
-    var mainStyle = document.querySelector('main').style;
-    mainStyle.height = window.innerHeight + 'px';
     window.setTimeout(fadein, 100);
   </script>
 </body>
