@@ -14,8 +14,8 @@
       -moz-osx-font-smoothing: grayscale; /* light on dark */
       background-color: #222;
       color: #fff;
-      opacity: 0;
       cursor: default;
+      opacity: 0;
       transition: .3s opacity ease-out;
     }
     a {
@@ -68,7 +68,7 @@
     function fadein() { document.body.style.opacity = '1'; }
     var mainStyle = document.querySelector('main').style;
     mainStyle.height = window.innerHeight + 'px';
-    window.onload = fadein; // window.setTimeout(fadein, 100);
+    window.setTimeout(fadein, 100);
   </script>
 </body>
 </html>
