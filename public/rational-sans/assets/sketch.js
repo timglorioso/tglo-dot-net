@@ -81,8 +81,9 @@ function setup() {
 
     /* Setup canvas, set animation and display properties */
     createCanvas(windowWidth, windowHeight);
-    frameRate(2);
+    background(255);
     pixelDensity(2);
+    frameRate(1);
     determineScale();
 
     /* Place the equals sign in the center of the window */
