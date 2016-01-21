@@ -63,7 +63,11 @@ function preload() {
  * Employ media-query-esque window width checking to put the 'S' in SVG.
  */
 function determineScale() {
-    if (windowWidth < 1500) {
+    if (windowWidth < 500) {
+        scale = 100;
+    } else if (windowWidth < 1000) {
+        scale = 120;
+    } else if (windowWidth < 1500) {
         scale = 180;
     } else {
         scale = 250;
