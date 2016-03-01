@@ -13,7 +13,7 @@
       -webkit-font-smoothing: antialiased; /* light on dark */
       -moz-osx-font-smoothing: grayscale; /* light on dark */
       background-color: #222;
-      color: #fff;
+      color: #ddd;
       cursor: default;
       opacity: 0;
       transition: .3s opacity ease-out;
@@ -31,9 +31,6 @@
       opacity: 1;
     }
     header {
-      position: absolute;
-      top: 0;
-      right: 0;
       padding: 1em 2em;
       text-align: center;
     }
@@ -49,7 +46,7 @@
       padding: .1em;
     }
     main {
-      margin: 5em auto;
+      margin: 1em auto;
       text-align: center;
     }
     main p {
@@ -69,7 +66,7 @@
       content: '\2197';
     }
     @media (max-width: 600px) {
-      main { margin-top: 12em; width: 90%; }
+      main { width: 90%; }
       main p { font-size: .9em; }
     }
     @media (min-width: 601px) and (max-width: 900px) {
@@ -81,7 +78,8 @@
       main p { font-size: .9em; }
     }
     @media (min-width: 1101px) {
-      main { width: 36em; }
+      header { position: absolute; top: 0; right: 0; }
+      main { margin-top: 5em; width: 36em; }
     }
   </style>
 </head>
