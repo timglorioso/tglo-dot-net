@@ -30,9 +30,6 @@
       opacity: 1;
     }
     header {
-      position: absolute;
-      top: 0;
-      right: 0;
       padding: 1em 2em;
       text-align: center;
     }
@@ -46,6 +43,9 @@
     }
     li {
       padding: .1em;
+    }
+    @media (min-width: 1101px) {
+      header { position: absolute; top: 0; right: 0; }
     }
   </style>
 </head>
