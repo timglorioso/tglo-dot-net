@@ -5,27 +5,21 @@
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' href='/assets/normalize.css'>
-  <link rel='stylesheet'
-        href='http://fonts.typotheque.com/WF-026258-008536.css'>
+  <link rel="stylesheet" href="https://fonts.typotheque.com/WF-026258-008536.css" type="text/css" />
   <style type='text/css'>
     html, body, main { height: 100%; }
     body {
       font: normal 400 20px/1.5 'Neutral', sans-serif;
-      -webkit-font-smoothing: antialiased; /* light on dark */
-      -moz-osx-font-smoothing: grayscale; /* light on dark */
-      background-color: #15a;
-      color: #fff;
+      background-color: #fff;
+      color: #666;
       cursor: default;
-      opacity: 0;
-      transition: .3s opacity ease-out;
     }
     a {
       display: inline-block; /* Safari fix */
-      color: #fff;
-      opacity: .6;
+      color: #666;
       font-weight: 700;
       text-decoration: none;
-      transition: 80ms opacity linear;
+      box-shadow: inset 0 -.67em 0 0 rgba(0, 0, 0, .2);
     }
     a:hover,
     a.selected {
@@ -46,6 +40,15 @@
     li {
       padding: .1em;
     }
+    header a {
+      box-shadow: none;
+    }
+    #link-about {
+      box-shadow: inset 0 -.67em 0 0 rgba(255, 255, 0, .5);
+    }
+    #link-blog {
+      box-shadow: inset 0 -.67em 0 0 rgba(0, 255, 255, .4);
+    }
     @media (min-width: 1101px) {
       header { position: absolute; top: 0; right: 0; }
     }
@@ -53,18 +56,14 @@
 </head>
 <body>
   <header>
-    <a href='/' title='back to tglo dot net'><img src='/assets/glasses-light.svg' width='64'></a>
+    <a href='/' title='back to tglo dot net'><img src='/assets/tg.svg' width='64'></a>
     <ul>
-      <li><a href='' class='selected'>stuff</a></li>
-      <li><a href='/blog/'>blog</a></li>
-      <li><a href='/about/'>about</a></li>
+      <li><a id='link-stuff' href='/stuff/'>stuff</a></li>
+      <li><a id='link-blog' href='/blog/'>blog</a></li>
+      <li><a id='link-about' href='/about/'>about</a></li>
     </ul>
   </header>
   <main>
   </main>
-  <script>
-    function fadein() { document.body.style.opacity = '1'; }
-    window.setTimeout(fadein, 100);
-  </script>
 </body>
 </html>
