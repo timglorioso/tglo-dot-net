@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="20px" viewBox="0 0 32 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>mail-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mail" transform="translate(0.000000, -3.000000)" fill="#2D72D9" fill-rule="nonzero">
+            <g id="Group-3">
+                <g id="mail-icon" transform="translate(0.000000, 3.000000)">
+                    <path d="M30,2.76619038 L16,11.1661904 L2,2.76619038 L2,18 L30,18 L30,2.76619038 Z M4.6103173,2 L16,8.83380962 L27.3896827,2 L4.6103173,2 Z M32,0 L32,20 L0,20 L0,0 L32,0 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
