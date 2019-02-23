@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import FlexBox from './FlexBox'
-import mailIcon from '../images/mail-icon.svg'
+import mailIcon from '../images/mail.svg'
 
 export default function EmailPrompt({ className }) {
   return (
@@ -39,5 +39,5 @@ const Icon = styled.img`
 const Prompt = styled.span`
   font-size: 14px;
   font-weight: 700;
-  color: #2D72D9;
+  color: #101010;
 `

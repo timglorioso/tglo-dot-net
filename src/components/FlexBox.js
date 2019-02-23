@@ -9,7 +9,7 @@ const FlexBox = styled.div`
     margin-right: ${props => props.flexDirection === 'column' ? 'initial' : props.itemSpacing};
     margin-bottom: ${props => props.flexDirection === 'column' ? props.itemSpacing : 'initial'};
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     flex-direction: ${props => props.isResponsive ? 'column' : props.flexDirection || 'initial'};
     & > *:not(:last-child) {
       margin-right: ${props => props.isResponsive ? 'initial' : props.itemSpacing};
